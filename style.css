@@ -1,0 +1,182 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+body{
+    background-color: #faf6f8;
+    padding:2% 15%;
+    text-align: center;
+}
+h1>a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f9004d;
+    background-color: #fdedf2;
+    border-radius: 12px;
+    text-decoration: none;
+}
+h1>a:hover{
+    background-color: #fdedf2;
+    color: #f3427a;
+    box-shadow: 1px 1px 5px 3px rgba(249, 0, 77,0.2);
+    transition: box-shadow 0.3s ease-in-out;
+}
+h1.assign3{
+    border-radius: 12px;
+    width: 100%;
+    margin: auto;
+}
+/*------ HEADER  ------*/
+nav.navbar{
+    border-radius: 5px 5px 0 0;
+}
+.d-flex{
+    padding-left: 60%;
+}
+a.navbar-brand{
+    color: white;
+}
+header>h1.syllabus{
+    text-align: center;
+    margin: 1rem;
+}
+.btn-outline-success{
+    color: white !important;
+    border: 1px solid grey !important;
+}
+.btn-outline-success:hover{
+    color: white !important;
+    background-color: rgba(0, 0, 0, 0.55) !important;
+    outline: 1px solid white;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    'input output'
+    ;
+}
+
+/*------ BUTTON SIDE  ------*/
+main>.js-btn{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: max-content;
+    padding: 3rem;
+    text-align: center;
+    grid-area: input;
+}
+main>.js-btn>.btn,button.clear{
+    height: 35px;
+    width: max-content;
+    padding: 7px;
+    margin: 15px 5px;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid #f9004d;
+    background-color: #f9004d;
+    color: white;
+    border-radius: 5px;
+}
+
+button.clear{
+    margin:5px 0;
+}
+main>.js-btn>.clr-bth{
+    border: 1px solid;
+    color:  rgba(0, 161, 0, 0.925);
+    background-color: rgb(214, 250, 214);
+}
+main>.js-btn>.btn:hover,button.clear:hover{
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    transition: all 0.4s ease-in-out;
+}
+main>.js-btn>.clr-bth:hover{
+    border: 1px solid black;
+    color: #f9004d;
+    background-color: black;
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.55);
+}
+
+/*------ OUTPUT SIDE  ------*/
+main>.output>h5{
+    margin-top: 0.45rem;
+    font-weight: bold;
+}
+main>.output{
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: max-content;
+    padding: 3rem;
+    grid-area: output;
+}
+p.input{
+    border: 1px solid #f9004d;
+    background-color: rgba(0, 0, 0, 0.55);
+    color: white;
+    border-radius: 5px;
+    width: 100%;
+    height: max-content;
+    margin: 1rem 0;
+    padding: 2px 12px;
+}
+div.output>.output{
+    border: 1px solid #f9004d;
+    border-radius: 5px;
+    width: 100%;
+    height: max-content;
+    margin: 1rem 0;
+    padding: 2px 12px;
+}
+
+/*------ FOOTER  ------*/
+footer.foo{
+    margin-top: 3rem;
+    text-align: center;
+    border-radius: 0 0 5px 5px;
+    /* font-weight: 400; */
+    background-color: rgba(0, 0, 0, 0.55);
+    color: white;
+}
+
+/*------ MEDIA QUERY  ------*/
+@media only screen and (max-width: 992px) {
+    .d-flex{
+        padding-left: 0;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    body{
+        padding: 10px 10px;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        'input'
+        'output'
+        ;
+    }
+    main>.js-btn{
+
+        width: 100%;
+        padding: 2rem;
+    }
+    main>.output{
+        width: 100%;
+        padding: 2rem;
+        text-align: center;
+    }
+  }
+
+
+
+
+
